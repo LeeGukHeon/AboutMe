@@ -4,6 +4,7 @@ import Regist from "./components/pages/regist/Regist";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import GlobalStyles from "./components/styles/GlobalStyles";
+import Home from "./components/pages/home/Home";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <main>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/regist" element={<Regist />} />
         </Routes>
       </main>
